@@ -1,0 +1,257 @@
+
+.my-posts-container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 80vh;
+    margin: 0 auto;
+    padding: 55px 25px;
+    box-sizing: border-box;
+    color: #24251f;
+}
+
+.my-posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.my-posts-eyebrow {
+    color: #66816a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.my-posts-header h1 {
+    margin: 8px 0;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+}
+
+.my-posts-header p {
+    color: #85857d;
+}
+
+.my-posts-create-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #46664c;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.my-posts-create-btn:hover {
+    background: #354f3a;
+}
+
+.my-posts-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.my-posts-stat-card {
+    padding: 22px;
+    background: #f0efe9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-posts-stat-card span {
+    color: #85857d;
+    font-size: 14px;
+}
+
+.my-posts-stat-card strong {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 30px;
+}
+
+.my-posts-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-bottom: 1px solid #e5e3dc;
+    margin-bottom: 25px;
+}
+
+.my-posts-tabs button {
+    padding: 12px 0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: none;
+    color: #85857d;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.my-posts-tabs button.active {
+    color: #46664c;
+    border-bottom-color: #46664c;
+    font-weight: 700;
+}
+
+.my-post-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid #e9e7e0;
+}
+
+.my-post-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.my-post-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.my-post-status.published {
+    background: #e5eee4;
+    color: #46664c;
+}
+
+.my-post-status.draft {
+    background: #eee9d9;
+    color: #80652c;
+}
+
+.my-post-info h2 {
+    margin: 12px 0 8px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 23px;
+    overflow-wrap: anywhere;
+}
+
+.my-post-info h2 a {
+    color: #24251f;
+    text-decoration: none;
+}
+
+.my-post-info h2 a:hover {
+    color: #46664c;
+}
+
+.my-post-date {
+    color: #85857d;
+    font-size: 13px;
+}
+
+.my-post-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.my-post-actions a,
+.my-post-actions button {
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.my-post-view-btn {
+    background: #efeee8;
+    color: #44463e;
+}
+
+.my-post-edit-btn {
+    background: #46664c;
+    color: white;
+}
+
+.my-post-delete-btn {
+    background: #f8e9e6;
+    color: #a44436;
+    border: none;
+}
+
+.my-post-empty {
+    padding: 70px 20px;
+    text-align: center;
+    color: #85857d;
+}
+
+.my-posts-empty {
+    padding: 70px 20px;
+    text-align: center;
+    color: #85857d;
+}
+
+.my-posts-empty h2 {
+    color: #24251f;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.my-posts-empty .my-posts-create-btn {
+    margin-top: 15px;
+}
+
+.my-posts-message,
+.my-posts-error {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.my-posts-error {
+    color: #a44436;
+}
+
+@media (max-width: 650px) {
+    .my-posts-container {
+        padding: 35px 17px;
+    }
+
+    .my-posts-header h1 {
+        font-size: 34px;
+    }
+
+    .my-posts-stats {
+        gap: 10px;
+    }
+
+    .my-posts-stat-card {
+        padding: 15px;
+    }
+
+    .my-posts-stat-card strong {
+        font-size: 24px;
+    }
+
+    .my-post-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .my-post-actions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .my-posts-stats {
+        grid-template-columns: 1fr;
+    }
+}
