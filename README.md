@@ -136,9 +136,3 @@ Passwords are hashed before being stored in the database.
 ## 👨‍💻 Author
 
 **Saksham Singh**
-
-GitHub: [@SakshamSingh-22](https://github.com/SakshamSingh-22)
-
----
-
-Built with ❤️ using the MERN stack.
